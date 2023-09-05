@@ -3,8 +3,63 @@ import './Main.css'
 export default function Main(){
     return(
         <main className="content-main">
-            <Filme/>
-            <Filme/>
+            <Filme titulo='Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/barbie.png'
+                   />
+            <Filme titulo='Filme Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/KEN.png'
+                   />
+            <Filme titulo='Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/barbie.png'
+                   />
+            <Filme titulo='Filme Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/boneca.jpg'
+                   />
+            <Filme titulo='Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/barbie.png'
+                   />
+            <Filme titulo='Filme Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/boneca.jpg'
+                   />
+            <Filme titulo='Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/barbie.png'
+                   />
+            <Filme titulo='Filme Barbie' 
+                   sinopse='Depois de ser expulsa da 
+                   Barbieland por ser uma boneca de aparência 
+                   menos do que perfeita, Barbie parte para o 
+                   mundo humano em busca da verdadeira felicidade.'
+                   imagem='/boneca.jpg'
+                   />
+            
         </main>
     )
 }
