@@ -1,11 +1,21 @@
 import Filme from './../filme/Filme'
 import './Main.css'
 export default function Main() {
+    let textodigitado = 'Barbie'
+    function TrataTexto(){
+        console.log("Digitado")
+        //Como eu faço para mudar o texto para "TERE"
+        textodigitado = "TERE"
+    }
     return (
         <>
             <div className="campo_pesquisa">
-                <input type="text" className='botao_pesquisa' placeholder='Pesquise um Filme' />
-                <p>Digitado:</p>
+                <p>Busque um filme</p>
+                <input type="text" 
+                       className='botao_pesquisa'
+                       placeholder='Pesquise um Filme'
+                       onChange={TrataTexto} />
+                <p>Digitado: {textodigitado} </p>
             </div>
             <main className="content-main">
                 <Filme titulo='Barbie'

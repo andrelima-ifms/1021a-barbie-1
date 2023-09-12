@@ -31,3 +31,106 @@ db.personal.insertMany([
 // db.personal.find()
 
 db.personal.deleteMany({})
+
+
+db.createCollection("treino");
+
+db.treino.insertOne(
+    {
+        nome:"Quadriceps",
+        dia: "Segunda",
+        exercicios:[
+            {
+                nome:"Agachamento Livre",
+                serie:5,
+                repeticoes:12,
+                peso:100
+            },
+            {
+                nome:"Leg 45",
+                serie:5,
+                repeticoes:12,
+                peso:200
+            },
+            {
+                nome:"Cadeira Extensora",
+                serie:5,
+                repeticoes:12,
+                peso:104
+            },
+            {
+                nome:"Agachamento Hack",
+                serie:5,
+                repeticoes:12,
+                peso:80
+            }
+        ]
+    }
+)
+db.treino.insertOne(
+    {
+        nome:"Costas",
+        dia: "Terça",
+        exercicios:[
+            {
+                nome:"Barra Fixa",
+                serie:5,
+                repeticoes:6,
+                peso:20
+            },
+            {
+                nome:"Remada Baixa",
+                serie:4,
+                repeticoes:15,
+                peso:60
+            },
+            {
+                nome:"Remada Cavalo",
+                serie:5,
+                repeticoes:12,
+                peso:80
+            },
+            {
+                nome:"Puxada Alta",
+                serie:4,
+                repeticoes:15,
+                peso:80
+            }
+        ]
+    }
+)
+
+use("bdacademia")
+//db.treino.find({})
+//db.treino.find({nome:"Costas"})
+db.treino.find({_id:ObjectId("64f866dedd11dfac8817592d")})
+
+
+use("bdacademia")
+db.treino.updateOne(
+    {_id:ObjectId("64f866dedd11dfac8817592d")},
+    {
+        $set:{dia:"Sexta"}
+    }
+)
+
+
+use("bdacademia")
+db.treino.updateOne(
+    {_id:ObjectId("64f866dedd11dfac8817592d"),"exercicios.nome":"Barra Fixa"},
+    {
+        $set:{
+            dia:"Sexta",
+            "exercicios.$.repeticoes":8
+        }
+    }
+)
+
+
+
+    // {
+    //     "nome": "Barra Fixa",
+    //     "serie": 5,
+    //     "repeticoes": 6,
+    //     "peso": 20
+    //   },
