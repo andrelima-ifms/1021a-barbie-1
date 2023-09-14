@@ -7,16 +7,44 @@
 }
 .campo_pesquisa{
     padding: 15px 100px;
+    margin-top: 20px;
 }
-.botao_pesquisa{
-    height: 30px;
-    border: 1px solid #f0f0f0;
-    border-radius: 5px;
 
-}
-.botao_pesquisa:focus {
-    outline: 1px solid rgb(138, 157, 255);  
-   }
-.botao_pesquisa.visited {
-    outline: 1px solid rgb(138, 157, 255);   
-}
+  
+.botao_pesquisa {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .content-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .filme {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    background-color: #f9f9f9;
+  }
+  
+  .filme img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .filme h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .filme p {
+    font-size: 16px;
+  }
+  

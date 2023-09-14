@@ -29,9 +29,16 @@ export default function Main() {
         },
         {
             id:3,
-            titulo:'Filme Barbie',
-            sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
-            imagem:'/boneca.jpg'
+            titulo:'Filme a muié do chucky',
+            sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie se torna uma boneca anã e matadora de KENS, e se casa com Chucky',
+            imagem:'/terror.jpg'
+        },
+
+        {
+            id:4,
+            titulo:'Rubber o pineu assassino',
+            sinopse:'Um pineu do carro da Barbie se revolta e busca vingança',
+            imagem:'/pineu.jpg'
         }
     ]
 
@@ -52,9 +59,20 @@ export default function Main() {
                 {texto && <p>Resultados Para: {texto} </p>}
             </div>
             <main className="content-main">
-                {/* 
-                    Use algo do vetor para tentar criar os filmes 
-                */}
+                {
+                    <main className="content-main">
+ 
+ 
+  {filmes.map((filme) => (
+    <div className="filme" key={filme.id}>
+                <img src={filme.imagem} alt={filme.titulo} />
+                <h2>{filme.titulo}</h2>
+                <p>{filme.sinopse}</p>
+</div>
+))}
+</main>
+
+                }
 
 
                 
@@ -104,7 +122,7 @@ export default function Main() {
                    menos do que perfeita, Barbie parte para o 
                    mundo humano em busca da verdadeira felicidade.'
                     imagem='/barbie.png'
-                />
+                
                 <Filme titulo='Filme Barbie'
                     sinopse='Depois de ser expulsa da 
                    Barbieland por ser uma boneca de aparência 
